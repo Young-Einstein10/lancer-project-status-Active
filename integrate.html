@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ -->    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+<!--     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ -->    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <title>Document</title>
     <style>
         body{
             margin:0;
             padding:0;
+            font-family: 'Open Sans', sans-serif;
         }
         .top-horizontal-bar{
-            
-            width: 98.5%;
+            margin-left: 200px;
+            width: 82%;
             height: 60px;
             padding: 10px;
             position: relative;
@@ -83,9 +85,52 @@
             line-height: 13px;
             font-family: 'Open Sans';
         }
-        .table {
-            margin: 25px 0 0 25px;
-        }
+       
+        /* Table Styles*/
+            .table {
+                margin-left: 220px;
+            }
+
+            table { 
+                border-collapse: collapse; 
+            } 
+            table thead tr th {
+                border: none;
+                text-align: left;
+            }
+
+            .dot {
+                margin-right: 15px;
+            }
+
+            .colon {
+                margin-left: 15px;
+            }
+          
+            th, td { 
+                width:150px; 
+                text-align:left; 
+                border:1px solid black; 
+                padding:5px;
+                border-left: none;
+                border-right: none;              
+            } 
+            .geeks { 
+                border-right:hidden; 
+            } 
+            .gfg { 
+                border-collapse:separate; 
+                border-spacing:0 15px; 
+            } 
+            .gfg tr td:nth-child(1) {
+                border-left: 1px solid;
+                border-radius: 3px;
+            }
+            .gfg tr td:nth-child(6) {
+                border-right: 1px solid;
+                border-radius: 3px;
+            }
+
         @media (max-width: 767px) {
             .top-horizontal-bar{
                 width: 96%;
@@ -181,9 +226,16 @@
            <p> <b>AU</b></p>
         </div>
         <div class="horizontal-icons">
-            <a href=""><img src="images/help.png" alt=""></a>
-            <a href=""><img src="images/alarm-clock.png" alt=""></a>
-            <a href=""><img src="images/notification (1).png" alt=""></a> 
+            <a href=""><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.3281 9.16406C18.3281 4.1109 14.2172 0 9.16406 0C4.1109 0 0 4.1109 0 9.16406C0 10.8109 0.438354 12.4144 1.27075 13.8221L0.0336914 18.2943L4.50604 17.0574C5.91376 17.8898 7.51721 18.3281 9.16406 18.3281C14.2172 18.3281 18.3281 14.2172 18.3281 9.16406ZM7.75781 7.03125H6.35156C6.35156 5.48035 7.61316 4.21875 9.16406 4.21875C10.715 4.21875 11.9766 5.48035 11.9766 7.03125C11.9766 7.81842 11.6433 8.57501 11.062 9.10675L9.86719 10.2003V11.2969H8.46094V9.58099L10.1125 8.06927C10.4077 7.79919 10.5703 7.4306 10.5703 7.03125C10.5703 6.2558 9.93951 5.625 9.16406 5.625C8.38861 5.625 7.75781 6.2558 7.75781 7.03125ZM8.46094 12.7031H9.86719V14.1094H8.46094V12.7031Z" fill="#091429"/>
+</svg>
+</a>
+        <a href=""><i class="fas fa-alarm-clock"></i></a>
+
+            <a href=""><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.387 16.6154V10.4615C17.387 6.6769 15.3747 3.51998 11.8486 2.68304V1.84615C11.8486 0.824596 11.024 0 10.0024 0C8.98086 0 8.15627 0.824596 8.15627 1.84615V2.6831C4.63012 3.52004 2.61781 6.67696 2.61781 10.4616V16.6154L0.15625 19.0769V20.3077H19.8485V19.0769L17.387 16.6154Z" fill="#091429"/>
+</svg>
+</a> 
                      
         </div>
 
@@ -214,40 +266,43 @@
           <a href="#proposal"><i class="fas fa-paste"></i> Proposals</a>
         </div>
         <div class="table">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Title</th>
-                    <th>Start Date</th>
-                    <th>Paid</th>
-                    <th>Due</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>&#8226; 5/09/2019</td>
+            <h3>PROJECTS</h3>
+            <select>
+                <option>Active</option>
+                <option>Inactive</option>
+            </select>
+
+            <table> 
+                <thead> 
+                    <tr> 
+                        <th>Date</th> 
+                        <th>Title</th> 
+                        <th>Start Date</th> 
+                        <th>Paid</th> 
+                        <th>Due</th> 
+                        <th>Status</th> 
+                    </tr> 
+                </thead> 
+            </table> 
+            <table class = "gfg"> 
+                <tr> 
+                    <td><span class="dot">&#8226;</span> 5/09/2019</td>
                     <td>Foodie</td>
                     <td>20/09/2019</td>
                     <td>&#8358; 200,000</td>
                     <td>&#8358; 200,000</td>
-                    <td>Active</td>
-                    <td>&#8942;</td>
-                </tr>
-                <tr>
-                    <td>&#8226; 5/09/2019</td>
+                    <td>Active<span><strong class="colon"> : </strong></span></td>                  
+                </tr> 
+                <tr> 
+                    <td><span class="dot">&#8226;</span> 5/09/2019</td>
                     <td>Foodie</td>
                     <td>20/09/2019</td>
                     <td>&#8358; 200,000</td>
                     <td>&#8358; 200,000</td>
-                    <td>Active </td>
-                    <td>&#8942;</td>
-                </tr>
-                </thead>
-        </table>
-        </table>
-    </div>
+                    <td>Active<span><strong class="colon"> : </strong></span></td>                    
+                </tr>               
+            </table> 
+        </div>
         <script>
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
         var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -267,3 +322,5 @@
         </script>
 </body>
 </html>
+
+        
